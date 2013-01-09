@@ -12,4 +12,4 @@ __version__ = '0.0.1'
 
 
 from .getch import getch
-from .pause import pause
+from .pause import pause, pause_exit
