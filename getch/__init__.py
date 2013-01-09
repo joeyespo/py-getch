@@ -9,3 +9,7 @@ Portable getch() for Python.
 """
 
 __version__ = '0.0.1'
+
+
+from .getch import getch
+from .pause import pause
