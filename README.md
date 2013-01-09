@@ -1,7 +1,7 @@
 Py-Getch
 ========
 
-Portable getch() for Python.
+Portable **getch()** for Python.
 
 
 Motivation
