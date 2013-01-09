@@ -1,0 +1,8 @@
+include LICENSE
+include *.txt
+include *.md
+
+prune examples
+prune research
+
+global-exclude local_config.py
