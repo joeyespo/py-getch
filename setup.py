@@ -1,5 +1,5 @@
 """\
-Py-Getch
+py-getch
 --------
 
 Portable getch() for Python.
