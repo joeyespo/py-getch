@@ -2,7 +2,9 @@ try:
     from msvcrt import getch
 except ImportError:
     def getch():
-        """Gets a single character from STDIO."""
+        """
+        Gets a single character from STDIO.
+        """
         import sys
         import tty
         import termios
