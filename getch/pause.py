@@ -21,7 +21,7 @@ def pause_exit(status=None, message='Press any key to exit'):
     If the status is omitted or None, it defaults to zero (i.e., success).
     If the status is numeric, it will be used as the system exit status.
     If it is another kind of object, it will be printed and the system
-    exit status will be one (i.e., failure).
+    exit status will be 1 (i.e., failure).
     """
     pause(message)
     sys.exit(status)
