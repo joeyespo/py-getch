@@ -13,17 +13,11 @@ Links
 """
 
 import os
-import sys
 from setuptools import setup, find_packages
 
 
-if sys.argv[-1] == 'publish':
-    os.system('python setup.py sdist upload')
-    sys.exit()
-
-
-def read(fname):
-    with open(os.path.join(os.path.dirname(__file__), fname)) as f:
+def read(filename):
+    with open(os.path.join(os.path.dirname(__file__), filename)) as f:
         return f.read()
 
 
@@ -39,7 +33,7 @@ setup(
     platforms='any',
     packages=find_packages(),
     package_data={'': ['LICENSE']},
-    install_requires=read('requirements.txt'),
+    install_requires=read('requirements.txt').splitlines(),
     zip_safe=False,
     entry_points={},
 )
