@@ -7,13 +7,9 @@ Portable **getch()** for Python.
 Motivation
 ----------
 
-More than a few times, I'd like to just write `getch()` instead of `raw_input()`.
-This is the missing cross-platform functionality you've been looking for.
-
-I don't anticipate this to be used in any major projects. Rather, installed
-globally and used in those one-off scripts that you'd like to have just a bit
-more professionalism with. Using `raw_input` for single-key capture and pause
-mechanism makes a hacked-together script feel even more like just that.
+More than a few times, I've had liked to just write `getch()` instead of
+`raw_input()`. This is the missing cross-platform functionality you've been
+looking for.
 
 
 Installation
@@ -41,17 +37,43 @@ pause()
 API
 ---
 
-```python
-getch()
-```
-
-Works like you'd expect, except that it returns a string.
+Wait for a keypress:
 
 ```python
-pause(message='Press any key to continue. . . ')
+ch = getch()
 ```
 
-For proper pause functionality.
+This works like you'd expect, except that it returns a string.
+
+You can also pause with the standard `'Press any key to continue. . . '` message:
+
+```python
+pause()
+```
+
+Or pause with a custom message:
+
+```python
+pause('Press any key to exit.')
+```
+
+You can have Python exit automatically with:
+
+```python
+pause_exit(status=0, message='Press any key to exit.')
+```
+
+
+Contributing
+------------
+
+1. Check the open issues or open a new issue to start a discussion around
+   your feature idea or the bug you found
+2. Fork the repository, make your changes, and add yourself to [Authors.md](./AUTHORS.md)
+3. Send a pull request
+
+If your PR has been waiting a while, feel free to [ping me on Twitter][twitter].
 
 
 [pip]: http://pypi.python.org/pypi/pip
+[twitter]: http://twitter.com/joeyespo
