@@ -1,4 +1,4 @@
-Py-Getch
+Py-Getch [![Current version on PyPI](http://img.shields.io/pypi/v/py-getch.svg?style=flat-square)][pypi] [![Downloads/month on PyPI](http://img.shields.io/pypi/dm/py-getch.svg?style=flat-square)][pypi]
 ========
 
 Portable **getch()** for Python.
@@ -75,5 +75,6 @@ Contributing
 If your PR has been waiting a while, feel free to [ping me on Twitter][twitter].
 
 
+[pypi]: http://pypi.python.org/pypi/py-getch/
 [pip]: http://pypi.python.org/pypi/pip
 [twitter]: http://twitter.com/joeyespo
