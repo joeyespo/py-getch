@@ -2,6 +2,12 @@ Gitpress Changelog
 ==================
 
 
+Version 1.0.1 (2015-11-29)
+--------------------------
+
+- Bugfix: Use `sys.stdout.flush` instead of unknown `flush` argument in Python 2.7
+
+
 Version 1.0.0 (2015-11-27)
 --------------------------
 

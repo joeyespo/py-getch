@@ -23,7 +23,7 @@ def read(filename):
 
 setup(
     name='py-getch',
-    version='1.0.0',
+    version='1.0.1',
     description='Portable getch() for Python.',
     long_description=__doc__,
     author='Joe Esposito',
