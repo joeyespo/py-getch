@@ -60,6 +60,8 @@ pause('Press any key to exit.')
 You can have Python exit automatically with:
 
 ```python
+from getch import pause_exit
+
 pause_exit(status=0, message='Press any key to exit.')
 ```
 
